@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RTSPLibrary", "RTSPLibrary.csproj", "{A4B88FE9-00ED-4F14-82B8-2213B2750D86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTSPLibrary.Test", "..\RTSPLibrary.Test\RTSPLibrary.Test.csproj", "{6AC5FDD0-961E-4FD1-BE51-35FEBC4476CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4B88FE9-00ED-4F14-82B8-2213B2750D86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4B88FE9-00ED-4F14-82B8-2213B2750D86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4B88FE9-00ED-4F14-82B8-2213B2750D86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4B88FE9-00ED-4F14-82B8-2213B2750D86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AC5FDD0-961E-4FD1-BE51-35FEBC4476CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AC5FDD0-961E-4FD1-BE51-35FEBC4476CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AC5FDD0-961E-4FD1-BE51-35FEBC4476CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AC5FDD0-961E-4FD1-BE51-35FEBC4476CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8820F6A7-E9D8-4E98-9378-5898481C35CA}
+	EndGlobalSection
+EndGlobal
