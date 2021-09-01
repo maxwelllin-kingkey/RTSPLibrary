@@ -2,30 +2,33 @@
 using System.Collections.Generic;
 using System.Linq;
 
-public static partial class LinqExtModule
+namespace RTSPLibrary
 {
-    public static T[] InternalBuffer<T>(this List<T> TList)
+    public static partial class LinqExtModule
     {
-        return TList.ToArray();
-    }
+        public static T[] InternalBuffer<T>(this List<T> TList)
+        {
+            return TList.ToArray();
+        }
 
-    public static TValue[] ValuesToArray<TKey, TValue>(this Dictionary<TKey, TValue> TDict)
-    {
-        TValue[] RetValue = null;
+        public static TValue[] ValuesToArray<TKey, TValue>(this Dictionary<TKey, TValue> TDict)
+        {
+            TValue[] RetValue = null;
 
-        lock (TDict)
-            RetValue = TDict.Values.ToArray();
+            lock (TDict)
+                RetValue = TDict.Values.ToArray();
 
-        return RetValue;
-    }
+            return RetValue;
+        }
 
-    public static T[] ToArrayWithLock<T>(this List<T> TList)
-    {
-        T[] RetValue = null;
+        public static T[] ToArrayWithLock<T>(this List<T> TList)
+        {
+            T[] RetValue = null;
 
-        lock (TList)
-            RetValue = TList.ToArray();
+            lock (TList)
+                RetValue = TList.ToArray();
 
-        return RetValue;
+            return RetValue;
+        }
     }
 }

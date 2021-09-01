@@ -2259,7 +2259,7 @@ namespace RTSPLibrary
                             else
                                 SearchBoundaryIndex = Math.Max((iLastBoundarySearchIndex - iHttpBoundary.Length), 0);
 
-                            for (int I = (iFrameRawData.Count - 1); I >= SearchBoundaryIndex; I += -iHttpBoundary.Length)
+                            for (int I = (iFrameRawData.Count - 1); I >= SearchBoundaryIndex; I -= iHttpBoundary.Length)
                             {
                                 bool Found = false;
                                 int p = I;
@@ -2269,7 +2269,7 @@ namespace RTSPLibrary
 
                                 if (iBoundaryHash.Contains(iFrameRawData[I]))
                                 {
-                                    for (int J = (I - 1); J >= SearchBoundaryIndex; J += -1)
+                                    for (int J = (I - 1); J >= SearchBoundaryIndex; J--)
                                     {
                                         if (iBoundaryHash.Contains(iFrameRawData[J]) == false)
                                         {

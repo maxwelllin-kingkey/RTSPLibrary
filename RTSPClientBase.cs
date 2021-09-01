@@ -255,7 +255,7 @@ namespace RTSPLibrary
                                     {
                                         int TmpIndex;
 
-                                        for (int I = 1; I < HeaderStringList.Length - 1; I++)
+                                        for (int I = 1; I < HeaderStringList.Length; I++)
                                         {
                                             string EachStr = HeaderStringList[I];
 
